@@ -9,17 +9,22 @@ import "swiper/css/effect-coverflow";
 const NewSwiper1 =()=>{
     const CardContent =[
         {
-            image:"/assets/porto-img/tech-club.png",
+            image:"/assets/otherproject/tech-club.png",
             title:"MEMBUAT DESAIN WEB ENTERTAIN",
+            description:"Membuat desain homepage untuk website entertain maupun berita mengenai perkembangan teknologi yang terus berkembang. Nantinya homepage ini memuat berita terkini dari berbagai titik didunia yang tentunya terkatit dengan teknologi",
+        },
+        {
+            image:"/assets/otherproject/platform-food.png",
+            title:"MEMBUAT DESAIN APLIKASI PEMESANAN MAKANAN ONLINE (ONLINE FOOD DELIVERY)",
+            description:"Desain ini diharapkan menjadi solusi untuk pengguna yang ingin memesan makanan secara daring/online.",
+        },
+        {
+            image:"/assets/otherproject/platform-movie.jpg",
+            title:"MEMBUAT DESAIN WEB ENTERTAIN UHUYY",
             description:"YAHAHA HAYUKKK",
         },
         {
-            image:"/assets/porto-img/tech-club.png",
-            title:"MEMBUAT DESAIN WEB ENTERTAINJUT",
-            description:"YAHAHA HAYUKKK",
-        },
-        {
-            image:"/assets/porto-img/tech-club.png",
+            image:"/assets/otherproject/elibs.png",
             title:"MEMBUAT DESAIN WEB ENTERTAIN UHUYY",
             description:"YAHAHA HAYUKKK",
         }
@@ -31,7 +36,9 @@ const NewSwiper1 =()=>{
         grabCursor={true}
         centeredSlides={true}
         slidesPerView="auto"
-        autoplay={true}
+        autoplay={{
+            delay: 500,
+          }}
         loop={true}
         coverflowEffect={{
         rotate: 50,
@@ -46,28 +53,28 @@ const NewSwiper1 =()=>{
         }}
         className="mySwiper"
     > 
-{CardContent.map((slide, index) => (
-<SwiperSlide key={index}>
-            <div className="card-wraper flex flex-col md:flex-row md:space-x-5 w-full items-start h-[400px] md:h-[450px] p-5 md:p-14 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-50 rounded-2xl border-2 border-white">
-                <div className="image-wraper mb-2 md:mb-2 flex">
-                    <img src={slide.image} className="md:h-44 md:w-72"/>
-                </div>
-                <div className="text-wraper text-balance space-y-2 md:space-y-0 flex flex-col">
-                    <div className="font-bold text-base md:text-2xl flex w-full justify-between">
-                        <h1>
-                            {slide.title}
-                        </h1>
+        {CardContent.map((slide, index) => (
+        <SwiperSlide key={index} className="p-5">
+                    <div className="card-wraper flex flex-col md:flex-row md:space-x-5 justify-start w-full items-start min-h-[480px] max-h-max  p-5 md:p-14 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-50 rounded-2xl border-2 border-white">
+                        <div className="image-wraper mb-2 w-full md:w-4/12">
+                            <img src={slide.image} className="h-full rounded-xl border border-white w-full object-cover md:h-48 md:w-96"/>
+                        </div>
+                        <div className="text-wraper w-full md:w-8/12 text-balance space-y-2 md:space-y-0 flex flex-col">
+                            <div className="font-bold text-base md:text-2xl flex w-full justify-between">
+                                <h1>
+                                    {slide.title}
+                                </h1>
+                            </div>
+                            <div className="flex text-sm md:text-base">
+                                <p className="">
+                                    {slide.description}
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="flex text-sm md:text-base">
-                        <p className="">
-                            {slide.description}
-                        </p>
-                    </div>
-                </div>
-            </div>
-     </SwiperSlide>
-))}
-</Swiper>
-    )
-}
+            </SwiperSlide>
+        ))}
+        </Swiper>
+            )
+        }
 export default NewSwiper1

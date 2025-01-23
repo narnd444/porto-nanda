@@ -9,6 +9,7 @@ import DesignPortSection from "@/components/DesignPortSection";
 import Footer from "@/components/footer";
 import ContactSection from "@/components/contact/contactsection";
 import ExperienceSection from "@/components/experiencesection";
+
 export default function Home() {
   return (
     <main>
