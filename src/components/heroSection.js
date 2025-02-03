@@ -2,20 +2,67 @@
 import Image from "next/image";
 import { RiSearchFill } from "react-icons/ri";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
+import { loadSlim } from "tsparticles-slim";
 import NewSliderHero from "./swiper/heroslider";
+
+const Particles = dynamic(() => import("react-tsparticles"), { ssr: false });
+
+const particlesInit = async (engine) => {
+  console.log("Particles Init");
+  await loadSlim(engine);
+};
 
 const Hero = () => {
   return (
     <section
-      className="flex font-Gotham bg min-h-screen h-max bg-hero bg-cover w-full"
+      className="relative flex font-Gotham bg min-h-screen h-max bg-hero bg-cover w-full"
       id="Home"
-      
     >
-      <motion.div  className="flex flex-col md:flex-row py-32 space-y-5 md:space-y-0 px-16 md:px-28 w-full full md:space-x-72 items-center justify-start md:justify-between" 
-      initial={{ opacity: 0, y: 50 }} // Animasi awal
-      animate={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -50 }} 
-      transition={{ duration: 0.8, ease: "easeInOut" }} >
+      
+      <Particles
+        id="tsparticles"
+        init={particlesInit}
+        className="absolute top-0 left-0 w-full h-full"
+        options={{
+          fullScreen: { enable: false },
+          background: { color: "transparent" },
+          particles: {
+            number: { value: 50 },
+            color: { value: "#ffffff" },
+            shape: { type: "circle" },
+            opacity: { value: 0.5 },
+            size: { value: 3 },
+            move: {
+              enable: true,
+              speed: 2,
+              direction: "none",
+              random: true,
+              straight: false,
+              outModes: "out",
+              parallax: { enable: true, force: 60, smooth: 10 }
+            },
+          },
+          interactivity: {
+            events: {
+              onHover: { enable: true, mode: "repulse" },
+              onClick: { enable: true, mode: "push" },
+            },
+            modes: {
+              repulse: { distance: 100 },
+              push: { quantity: 4 },
+            },
+          },
+        }}
+      />
+
+      <motion.div 
+        className="flex flex-col md:flex-row py-32 space-y-5 md:space-y-0 px-16 md:px-28 w-full full md:space-x-72 items-center justify-start md:justify-between relative"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -50 }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
+      >
         <div className="flex-col space-y-3 items-start text-center md:text-left text-balance justify-center">
           <div className="search-bar px-3 md:hidden flex justify-between mb-16 items-center md:right-0 border rounded-lg">
             <input

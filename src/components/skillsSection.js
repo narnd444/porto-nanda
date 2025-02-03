@@ -12,19 +12,19 @@ const SkillSection =()=>{
                 <div className="flex flex-col">
                     <h1 className="text-3xl font-bold uppercase mb-5">Tools</h1>
                     <ol className="list-inside space-y-5 font-medium text-xl">
-                        <li className="flex items-center space-x-4"><FaFigma/><p>Figma</p></li>
-                        <li className="flex items-center space-x-4"><BiLogoVisualStudio/><p>Visual Studio Code</p></li>
-                        <li className="flex items-center space-x-4"><FaGitAlt/><p>Git</p></li>
-                        <li className="flex items-center space-x-4"><RiGithubFill/><p>Github</p></li>
+                        <li className="flex items-center space-x-4 transition-all duration-300 hover:scale-110"><FaFigma/><p>Figma</p></li>
+                        <li className="flex items-center space-x-4 transition-all duration-300 hover:scale-110"><BiLogoVisualStudio/><p>Visual Studio Code</p></li>
+                        <li className="flex items-center space-x-4 transition-all duration-300 hover:scale-110"><FaGitAlt/><p>Git</p></li>
+                        <li className="flex items-center space-x-4 transition-all duration-300 hover:scale-110"><RiGithubFill/><p>Github</p></li>
                     </ol>
                 </div>
                 <div className="flex flex-col">
                     <h1 className="text-3xl font-bold mb-5 uppercase">Tech Used</h1>
                     <ol className="list-inside space-y-5 font-medium text-xl">
-                        <li className="flex items-center space-x-4"><RiHtml5Fill/><p>Html</p></li>
-                        <li className="flex items-center space-x-4"><RiCss3Fill/><p>Css</p></li>
-                        <li className="flex items-center space-x-4"><RiTailwindCssFill/><p>TailwindCSS</p></li>
-                        <li className="flex items-center space-x-4"><RiNextjsFill/><p>NextJS</p></li>
+                        <li className="flex items-center space-x-4 transition-all duration-300 hover:scale-110"><RiHtml5Fill/><p>Html</p></li>
+                        <li className="flex items-center space-x-4 transition-all duration-300 hover:scale-110"><RiCss3Fill/><p>Css</p></li>
+                        <li className="flex items-center space-x-4 transition-all duration-300 hover:scale-110"><RiTailwindCssFill/><p>TailwindCSS</p></li>
+                        <li className="flex items-center space-x-4 transition-all duration-300 hover:scale-110"><RiNextjsFill/><p>NextJS</p></li>
                     </ol>
                 </div>
             </div>
