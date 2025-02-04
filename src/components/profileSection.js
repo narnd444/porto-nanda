@@ -1,5 +1,7 @@
 "use client"
 import { useState,useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const ProfileSection =()=>{
     const [activeModal, setActiveModal] = useState(null); // Track which modal is open
@@ -10,6 +12,16 @@ const ProfileSection =()=>{
       setActiveModal(modalName);
       setShowModal(true);
     };
+
+    const controls = useAnimation();
+    const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.2 });
+
+    useEffect(() => {
+        if (inView) {
+            controls.start({ opacity: 1, y: 0 });
+        }
+    }, [inView, controls]);
+
   
     // Close modal
     const closeModal = () => {
@@ -18,7 +30,11 @@ const ProfileSection =()=>{
     };
     return(
         <section className="flex bg-black max-h-screen h-screen w-full font-Gotham">
-            <div className="relative flex h-screen w-full">
+            <motion.div className="relative flex h-screen w-full" 
+            ref={ref}
+            initial={{ opacity: 0, y: 50 }}
+            animate={controls}
+            transition={{ duration: 0.8, ease: "easeOut" }}>
                 <div className="absolute left-10 top-10 md:top-auto  md:left-16 md:bottom-40 flex flex-col">
                     <h1 className="text-8xl md:text-multixl font-Pinyon shadow-lg">Nanda Sofian</h1>
                 <div className="flex flex-col md:flex-row md:space-x-5 items-start md:items-center space-y-5 md:space-y-0">
@@ -44,7 +60,7 @@ const ProfileSection =()=>{
                     <img src="/assets/avatar/avatar.png" className="h-full object-cover">
                     </img>
                 </div>
-            </div>
+            </motion.div>
             {showModal && (
         <div
           className={`fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 ${
@@ -72,7 +88,33 @@ const ProfileSection =()=>{
 
             <div>
             {activeModal === "modalBackground" && (
-                <p></p>
+                <table className="flex mb-4">
+                <thead className="flex space-x-4">
+                    <tr className="flex flex-col justify-start items-start">
+                        <th>Pendidikan :</th>
+                        <th>Asal Sekolah</th>
+                        <th>Kelas</th>
+                        <th>Jurusan</th>
+                        
+                    </tr>
+                    <tr className="flex flex-col">
+                        <td>:</td>
+                        <td>:</td>
+                        <td>:</td>
+                        <td>:</td>
+                       
+                    </tr>
+                </thead>
+                <tbody className="flex">
+                    <tr className="flex flex-col ml-4">
+                        <td>Sekolah Menengah Kejuruan</td>
+                        <td>SMK Informatika Sumedang</td>
+                        <td>XII</td>
+                        <td>Rekayasa Perangkat Lunak</td>
+                        
+                    </tr>
+                </tbody>
+               </table>
               )}
               {activeModal === "modalProfile" && (
                <table className="flex mb-4">
