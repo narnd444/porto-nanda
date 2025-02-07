@@ -87,7 +87,7 @@ import { IoIosArrowDown } from "react-icons/io";
           
                 {/* Menu Navigasi untuk Mobile (md:hidden), akan muncul ketika isMenuOpen true */}
                 <div className={`absolute transition-all duration-300 w-full h-72 top-20   md:hidden ${isMenuOpen ? 'flex opacity-100 ' : 'hidden opacity-0'}`}>
-                    <nav className="bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 bg-black border rounded-xl border-slate-400/20 w-full h-full text-white space-y-4 p-32 flex flex-col justify-center items-center z-20">
+                    <nav className="bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-50 bg-black border rounded-xl border-slate-400/20 w-full h-full text-white space-y-4 p-32 flex flex-col justify-center items-center z-20">
                         <a href="#" className=" text-center relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Home</a>
                         <a href="#" className=" text-center relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Profile</a>
                         <a href="#" className=" text-center relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left">Portfolio</a>
