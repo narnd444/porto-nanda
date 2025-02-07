@@ -20,13 +20,13 @@ const NewSwiper1 =()=>{
         },
         {
             image:"/assets/otherproject/platform-movie.jpg",
-            title:"MEMBUAT DESAIN WEB ENTERTAIN UHUYY",
-            description:"YAHAHA HAYUKKK",
+            title:"MEMBUAT DESAIN APLIKASI PLATFORM ONLINE",
+            description:"KEREN BANGET JING",
         },
         {
             image:"/assets/otherproject/elibs.png",
-            title:"MEMBUAT DESAIN WEB ENTERTAIN UHUYY",
-            description:"YAHAHA HAYUKKK",
+            title:"MEMBUAT DESAIN WEB PERPUSTAKAAN ONLINE",
+            description:"CAN BERES AOWOKWOKWOK",
         }
     ];
     return(

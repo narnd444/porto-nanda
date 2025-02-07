@@ -30,12 +30,12 @@ const NewSliderHero =()=>{
         </SwiperSlide>
         <SwiperSlide className="p-5">
         <div className="card-wraper flex">
-                    <img src="/assets/porto-img/ikn.png" className="w-full h-full object-cover rounded-lg shadow-lg shadow-sky-100/20"/>
+                    <img src="/assets/porto-img/k-learn.png" className="w-full h-full object-cover rounded-lg shadow-lg shadow-sky-100/20"/>
                 </div>
         </SwiperSlide>
         <SwiperSlide className="p-5">
         <div className="card-wraper flex">
-                    <img src="/assets/porto-img/ikn.png" className="w-full h-full object-cover rounded-lg shadow-lg shadow-sky-100/20"/>
+                    <img src="/assets/porto-img/tech-club.png" className="w-full h-full object-cover rounded-lg shadow-lg shadow-sky-100/20"/>
                 </div>
         </SwiperSlide>
          </Swiper>
