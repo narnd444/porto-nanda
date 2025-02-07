@@ -14,7 +14,7 @@ const DesignPortSection = () => {
     initial="hidden"
     animate={inView ? "visible" : "hidden"}
     variants={fadeInVariants}
-    transition={{ duration: 0.8, ease: "easeOut" }}>
+    transition={{ duration: 0.8, ease: "easeOut" }} id='design'>
       <div className="flex md:flex-row space-y-3 flex-col justify-between w-full h-max px-10">
         <h1 className="text-5xl font-bold max-w-80">DESIGN PORTFOLIO</h1>
         <p className="max-w-72 font-light">
@@ -26,7 +26,7 @@ const DesignPortSection = () => {
         <motion.div
           className="flex shadow-lg"
           animate={{
-            x: ['100%', '-300%'],
+            x: ['100%', '-500%'],
           }}
           transition={{
             x: {

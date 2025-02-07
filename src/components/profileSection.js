@@ -29,7 +29,7 @@ const ProfileSection =()=>{
       setTimeout(() => setActiveModal(null), 300); // Wait for animation before unmounting
     };
     return(
-        <section className="flex bg-black max-h-screen h-screen w-full font-Gotham">
+        <section className="flex bg-black max-h-screen h-screen w-full font-Gotham" id="Profile">
             <motion.div className="relative flex h-screen w-full" 
             ref={ref}
             initial={{ opacity: 0, y: 50 }}
@@ -106,11 +106,11 @@ const ProfileSection =()=>{
                     </tr>
                 </thead>
                 <tbody className="flex">
-                    <tr className="flex flex-col ml-4">
-                        <td>Sekolah Menengah Kejuruan</td>
-                        <td>SMK Informatika Sumedang</td>
-                        <td>XII</td>
-                        <td>Rekayasa Perangkat Lunak</td>
+                    <tr className="flex flex-col space-y-2 md:space-y-0 ml-4">
+                        <td className="text-xs md:text-base">Sekolah Menengah Kejuruan</td>
+                        <td className="text-xs md:text-base">SMK Informatika Sumedang</td>
+                        <td className="text-xs md:text-base">XII</td>
+                        <td className="text-xs md:text-base">Rekayasa Perangkat Lunak</td>
                         
                     </tr>
                 </tbody>
