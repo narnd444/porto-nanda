@@ -72,8 +72,8 @@ const Hero = () => {
             ></input>
             <RiSearchFill className="text-white text-2xl" />
           </div>
-          <h1 className="flex text-7xl">Web Developer</h1>
-          <p className="flex text-sm">
+          <h1 className="flex text-7xl text-white">Web Developer</h1>
+          <p className="flex text-sm text-white">
             Halo, saya Nanda Sofian. Saya bekerja sebagai programmer di
             PT.SahabatKomodo. Saya fokus pada pengembangan Sistem Front End.
             Saya senang bisa berbagi pengetahuan tentang Cara memberi prompt

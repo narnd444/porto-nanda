@@ -63,7 +63,7 @@ const ProfileSection =()=>{
             </motion.div>
             {showModal && (
         <div
-          className={`fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 ${
+          className={`fixed inset-0 z-50 flex items-center p-5 justify-center bg-black bg-opacity-50 ${
              activeModal ? "opacity-100" : "opacity-0"
           } transition-opacity duration-300`}
         >
@@ -91,8 +91,8 @@ const ProfileSection =()=>{
                 <table className="flex mb-4">
                 <thead className="flex space-x-4">
                     <tr className="flex flex-col justify-start items-start">
-                        <th>Pendidikan :</th>
-                        <th>Asal Sekolah</th>
+                        <th>Pendidikan </th>
+                        <th>Sekolah</th>
                         <th>Kelas</th>
                         <th>Jurusan</th>
                         
