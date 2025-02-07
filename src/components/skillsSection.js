@@ -18,7 +18,7 @@ const SkillSection =()=>{
     }, [inView, controls]);
 
     return(
-        <section className="flex flex-col  relative bg-black pb-16 h-max w-full" id="skill">
+        <section className="flex flex-col  relative bg-black pb-16 h-max w-full text-white" id="skill">
             <div className="flex w-full h-max  ">
                 <img src="/assets/background/overlay/overlayY.png" className="object-cover w-full"></img>
             </div>

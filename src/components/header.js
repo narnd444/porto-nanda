@@ -23,7 +23,7 @@ import { IoIosArrowDown } from "react-icons/io";
               };
           
             return (
-              <header className="z-50 flex p-5  w-full bg-white-700  bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 border-b border-slate-400/20 fixed font-Gotham">
+              <header className="z-50 flex p-5  w-full bg-white-700  bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 border-b border-slate-400/20 fixed font-Gotham text-white">
                 <div className="relative flex justify-center md:flex w-full  md:px-5">
                 <div className="flex justify-between items-center w-full">
                   <div className="flex">

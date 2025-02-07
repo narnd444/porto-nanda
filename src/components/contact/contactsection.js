@@ -25,7 +25,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="flex flex-col h-max py-16 space-y-16 items-center justify-center w-full font-Gotham">
+    <section className="flex flex-col h-max py-16 space-y-16 items-center justify-center w-full font-Gotham text-white">
       <div className="title-wraper flex flex-col text-center items-center">
         <h1 className="flex text-yellow-400 font-bold text-2xl">Contact Me</h1>
         <p className="text-sm">

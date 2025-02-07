@@ -29,7 +29,7 @@ const ProfileSection =()=>{
       setTimeout(() => setActiveModal(null), 300); // Wait for animation before unmounting
     };
     return(
-        <section className="flex bg-black max-h-screen h-screen w-full font-Gotham" id="Profile">
+        <section className="flex bg-black max-h-screen h-screen w-full font-Gotham text-white" id="Profile">
             <motion.div className="relative flex h-screen w-full" 
             ref={ref}
             initial={{ opacity: 0, y: 50 }}

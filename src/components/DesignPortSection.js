@@ -22,7 +22,7 @@ const DesignPortSection = () => {
         </p>
       </div>
 
-      <div className="overflow-hidden flex flex-col my-5 md:my-10 h-96 bg-contour-patern  bg-opacity-20 bg-center bg-contain bg-no-repeat items-center  w-full">
+      <div className="overflow-hidden flex flex-col my-5 md:my-10 h-96 bg-contour-patern  bg-opacity-20 bg-center bg-contain bg-no-repeat items-center  w-full text-white">
         <motion.div
           className="flex shadow-lg"
           animate={{

@@ -9,7 +9,7 @@ const ExperienceSection =()=>{
           visible: { opacity: 1, y: 0 },
         };
     return(
-        <section className="flex h-max w-full space-y-10 font-Gotham py-16" id="experience">
+        <section className="flex h-max w-full space-y-10 font-Gotham py-16 text-white" id="experience">
             <motion.div ref={ref} className="w-full space-y-5 flex flex-col items-center"
              initial="hidden"
              animate={inView ? "visible" : "hidden"}

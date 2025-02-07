@@ -15,7 +15,7 @@ const OtherProjectSection =()=>{
       };
 
     return(
-        <section className="relative flex flex-col h-max py-10 bg-black space-y-10 md:space-y-20 w-full   transition-all duration-300 items-center font-Gotham ">
+        <section className="relative flex flex-col h-max py-10 bg-black space-y-10 md:space-y-20 w-full   transition-all duration-300 items-center font-Gotham text-white">
              <div className="title-wrap  flex">
                 <h1 className="text-2xl font-bold">OTHER<span className="text-yellow-400 ">PROJECT</span></h1>
             </div>

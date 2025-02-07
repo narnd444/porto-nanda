@@ -3,7 +3,7 @@ import Image from "next/image";
 import { FaGithub,FaInstagram,FaDiscord } from "react-icons/fa";
 const Footer =()=>{
     return(
-        <footer className="w-full h-max font-Gotham px-16 flex items-center justify-between p-6 border-t bg-black border-white">
+        <footer className="w-full h-max font-Gotham px-16 flex items-center justify-between p-6 border-t bg-black border-white text-white">
         
             <div className="logo-section flex items-center ">
                 <img src="/assets/logo/logo.png"/>

@@ -12,7 +12,7 @@ const BestProjectSection = () => {
   };
 
   return (
-    <section className="flex flex-col items-center h-max py-10 w-full justify-center font font-Gotham bg-black" id="porto">
+    <section className="flex flex-col items-center h-max py-10 w-full justify-center font font-Gotham bg-black text-white" id="porto">
       <div className="title-wrap flex">
         <h1 className="text-2xl font-bold text-white">
           <span className="text-yellow-400">BEST</span> PROJECT
