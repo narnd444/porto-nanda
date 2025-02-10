@@ -64,14 +64,6 @@ const Hero = () => {
         transition={{ duration: 0.8, ease: "easeInOut" }}
       >
         <div className="flex-col space-y-3 items-start text-center md:text-left text-balance justify-center">
-          <div className="search-bar px-3 md:hidden flex justify-between mb-16 items-center md:right-0 border rounded-lg">
-            <input
-              type="search"
-              placeholder="Search Here..."
-              className="py-2 bg-transparent"
-            ></input>
-            <RiSearchFill className="text-white text-2xl" />
-          </div>
           <h1 className="flex text-7xl text-white">Web Developer</h1>
           <p className="flex text-sm text-white">
             Halo, saya Nanda Sofian. Saya bekerja sebagai programmer di
@@ -90,7 +82,7 @@ const Hero = () => {
             <RiSearchFill className="text-white text-2xl mr-3" />
           </div>
           <div className="items-center h-full w-full flex flex-col">
-            <h1 className="flex font-medium uppercase text-center text-3xl md:hidden">
+            <h1 className="flex font-medium uppercase text-center text-white text-3xl ">
               My Project
             </h1>
             <NewSliderHero />
