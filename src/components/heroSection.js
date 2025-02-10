@@ -73,14 +73,6 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex flex-col h-64 space-y-10 items-center relative w-full">
-          <div className="search-bar md:flex items-center hidden md:right-0 border rounded-lg">
-            <input
-              type="search"
-              placeholder="Search Here..."
-              className="p-2 bg-transparent"
-            ></input>
-            <RiSearchFill className="text-white text-2xl mr-3" />
-          </div>
           <div className="items-center h-full w-full flex flex-col">
             <h1 className="flex font-medium uppercase text-center text-white text-3xl ">
               My Project
