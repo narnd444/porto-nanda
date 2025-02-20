@@ -20,13 +20,13 @@ const NewSwiper1 =()=>{
         },
         {
             image:"/assets/otherproject/platform-movie.jpg",
-            title:"MEMBUAT DESAIN APLIKASI PLATFORM ONLINE",
-            description:"KEREN BANGET JING",
+            title:"MEMBUAT DESAIN APLIKASI PLATFORM FILM ONLINE",
+            description:"DESAIN YANG DITUJUKAN MENJADI SOLUSI UNTUK ORANG ORANG YANG TIDAK DAPAT DATANG KE BIOSKON UNTUK MENONTON FILM.",
         },
         {
             image:"/assets/otherproject/elibs.png",
             title:"MEMBUAT DESAIN WEB PERPUSTAKAAN ONLINE",
-            description:"CAN BERES AOWOKWOKWOK",
+            description:"Desain web perpustakaan online, untuk memudahkan proses peminjamanan buku dan efisiensi waktu untuk para pembaca buku.",
         }
     ];
     return(

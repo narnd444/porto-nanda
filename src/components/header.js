@@ -55,13 +55,13 @@ import { IoIosArrowDown } from "react-icons/io";
                                 className="dropdown-item w-full text-left px-4 py-2 hover:bg-slate-950"
                                 onClick={() => changeLanguage("Bahasa Indonesia")}
                             >
-                                Bahasa Indonesia
+                                Halo, Saya Nanda.
                             </button>
                             <button
                                 className="dropdown-item w-full text-left px-4 py-2 hover:bg-slate-950"
                                 onClick={() => changeLanguage("English")}
                             >
-                                English
+                                Hello, I'M Nanda.
                             </button>
                             </div>
                         )}
