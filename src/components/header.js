@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image"
 import { useState } from "react";
-import { IoLanguage } from "react-icons/io5";
+
 import { IoIosArrowDown } from "react-icons/io";
         const Header = () => {
             // State untuk mengatur apakah menu navigasi ditampilkan di mobile
@@ -43,7 +43,7 @@ import { IoIosArrowDown } from "react-icons/io";
                             className="language-button flex items-center space-x-1 text-white px-3 py-2 rounded focus:outline-none"
                             onClick={toggleDropdown}
                         >
-                            <IoLanguage />
+                            
                             {selectedLanguage}
                             <IoIosArrowDown />
                         </button>
