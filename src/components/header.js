@@ -12,7 +12,7 @@ import { IoIosArrowDown } from "react-icons/io";
               setIsMenuOpen(!isMenuOpen);
             };
             const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-            const [selectedLanguage, setSelectedLanguage] = useState("Bahasa Indonesia");
+            const [selectedLanguage, setSelectedLanguage] = useState("Halo, saya nanda.");
             const toggleDropdown = () => {
                 setIsDropdownOpen((prev) => !prev);
               };
@@ -53,15 +53,15 @@ import { IoIosArrowDown } from "react-icons/io";
                             <div className="dropdown-menu  absolute top-full mt-2 right-0 bg-black rounded shadow-lg text-white w-40">
                             <button
                                 className="dropdown-item w-full text-left px-4 py-2 hover:bg-slate-950"
-                                onClick={() => changeLanguage("Bahasa Indonesia")}
+                                onClick={() => changeLanguage("Halo, saya nanda.")}
                             >
-                                Halo, Saya Nanda.
+                                Halo
                             </button>
                             <button
                                 className="dropdown-item w-full text-left px-4 py-2 hover:bg-slate-950"
-                                onClick={() => changeLanguage("English")}
+                                onClick={() => changeLanguage("Hello, i'm nanda.")}
                             >
-                                Hello, I'M Nanda.
+                                Hello
                             </button>
                             </div>
                         )}
