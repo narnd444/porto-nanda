@@ -1,4 +1,5 @@
 "use client"
+import Typewriter from 'typewriter-effect';
 import Image from "next/image";
 import { RiSearchFill } from "react-icons/ri";
 import { motion } from "framer-motion";
@@ -64,7 +65,16 @@ const Hero = () => {
         transition={{ duration: 0.8, ease: "easeInOut" }}
       >
         <div className="flex-col space-y-3 items-start text-center md:text-left text-balance justify-center">
-          <h1 className="flex text-7xl text-white">Web Developer</h1>
+              <div className='flex text-5xl font-bold w-full text-center'>
+                  <Typewriter
+            options={{
+              strings: ['Web Developer', 'AI Prompter', 'UI Designer', 'Illustrator'],
+              autoStart: true,
+              loop: true,
+            }}
+           
+          />
+            </div>
           <p className="flex text-sm text-white">
             Halo, saya Nanda Sofian. Saya bekerja sebagai programmer di
             PT.SahabatKomodo. Saya fokus pada pengembangan Sistem Front End.
